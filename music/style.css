@@ -1,0 +1,23 @@
+body {
+    /* Путь к изображению относительно данного файла */
+    background-image: url(maxresdefault (3).jpg);
+ 
+    /* Центрирование изображения по вертикали и горизонтали всегда */
+    background-position: center center;
+ 
+    /* Запрещаем повтор изображения */
+    background-repeat: no-repeat;
+ 
+    /* Фиксируем изображение - оно остается на месте при прокрутке окна */
+    background-attachment: fixed;
+ 
+    /* Изображение будет масштабироваться в зависимости от размеров контейнера */
+    background-size: cover;
+ 
+    /* Цвет фона изображения, который будет показываться пока изображение не загрузится */
+    background-color:#ff0000;
+ 
+    /* Эквивалентная сокращенная запись
+    * background: url(background-photo.jpg) center center cover no-repeat fixed;
+    */
+}
