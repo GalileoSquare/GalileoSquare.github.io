@@ -15,7 +15,7 @@ body {
     background-size: cover;
  
     /* Цвет фона изображения, который будет показываться пока изображение не загрузится */
-    background-color:#ff0000;
+    background-color:#464646;
  
     /* Эквивалентная сокращенная запись
     * background: url(background-photo.jpg) center center cover no-repeat fixed;
