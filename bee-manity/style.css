@@ -1,6 +1,6 @@
 body {
     /* Путь к изображению относительно данного файла */
-    background-image: url(bees-hero.jpg);
+    background-image: url(maxresdefault.jpg);
  
     /* Центрирование изображения по вертикали и горизонтали всегда */
     background-position: center center;
