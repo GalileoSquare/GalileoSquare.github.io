@@ -18,6 +18,6 @@ body {
     background-color:#464646;
  
     /* Эквивалентная сокращенная запись
-    * background: url(background-photo.jpg) center center cover no-repeat fixed ;
+    * background: url(background-photo.jpg) center center cover no-repeat fixed;
     */
 }
