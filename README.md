@@ -1,2 +1,2 @@
-# Galileo.github.io
+# galileosquare
 Сайты
