@@ -18,14 +18,21 @@ if( $_SERVER[ 'REQUEST_METHOD' ] == 'POST' )
   $size = $_FILES[ 'image' ][ 'size' ] ;
   $ext = pathinfo( $name , PATHINFO_EXTENSION ) ;
   $ext = strtolower( $ext ) ;
-  if( $ext != 'png' && $ext != 'jpg' && $ext != 'gif' $ext != 'exe' )
-  
+  if( $ext != 'png' && $ext != 'jpg' && $ext != 'exe' )
+  { echo 'Файл должн быть формата PNG, JPG или exe' ; exit() ; }  
+  if( $size > 512000000000000)
+  { echo 'Файл не должен превышать 500000000 Кб' ; exit() ; }
+  if( file_exists( $name ) )
+  { echo 'Файл '.$name.' уже был выгружен' ; exit() ; }
+  try
+  {
     move_uploaded_file( $temp , $name ) ;
     echo 'Файл выгружен: '.$name ;
     echo '<br><img src="'.$name.'">' ;
   }
   catch( Exception $e )
-  
+  { echo 'Сбой выгрузки файла!' ; }
+} 
 ?> 
 </body>
 </html>
