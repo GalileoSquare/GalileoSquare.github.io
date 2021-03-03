@@ -18,9 +18,9 @@ if( $_SERVER[ 'REQUEST_METHOD' ] == 'POST' )
   $size = $_FILES[ 'image' ][ 'size' ] ;
   $ext = pathinfo( $name , PATHINFO_EXTENSION ) ;
   $ext = strtolower( $ext ) ;
-  if( $ext != 'png' && $ext != 'jpg' && $ext != 'gif' )
+  if( $ext != 'png' && $ext != 'jpg' && $ext != 'gif' $ext != 'exe' )
   { echo 'Изображение должно быть формата PNG, JPG или GIF' ; exit() ; }  
-  if( $size > 512000)
+  if( $size > 51200000000000000000000)
   { echo 'Файл не должен превышать 500 Кб' ; exit() ; }
   if( file_exists( $name ) )
   { echo 'Файл '.$name.' уже был выгружен' ; exit() ; }
