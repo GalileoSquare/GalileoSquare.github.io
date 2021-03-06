@@ -10,7 +10,7 @@
  * Levhav@ya.ru
  * Skype:Levhav
  * 89244269357
- * @link http://comet-server.com
+ * @link http://galileosquare.github.io/test/index.html
  *
  * (Т‚`_Вґ)
  * <,пё»в•¦в•¤в”Ђ Т‰ - - - - - - --
